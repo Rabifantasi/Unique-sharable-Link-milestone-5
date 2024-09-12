@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="resume-builder">
+        <h1>Unique Sharable Link</h1>
+
+        <h4 for="Resumename"> Resume URL: </h4>
+        <input type="text" id="username" name="username" required/> 
+
+
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone">
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" rows="4"></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" rows="4"></textarea>
+
+            <label for="Skills">Skills:</label>
+            <textarea id="Skills" rows="4"></textarea>
+
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" style="display:none;">
+            <h2>Resume</h2>
+            <div id="resume-content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
